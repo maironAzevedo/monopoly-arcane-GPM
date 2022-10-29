@@ -1,4 +1,4 @@
-module com.example.demo1 {
+module com.projeto.monopoly {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -6,6 +6,6 @@ module com.example.demo1 {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.example.demo1 to javafx.fxml;
-    exports com.example.demo1;
+    opens com.projeto.monopoly to javafx.fxml;
+    exports com.projeto.monopoly;
 }
