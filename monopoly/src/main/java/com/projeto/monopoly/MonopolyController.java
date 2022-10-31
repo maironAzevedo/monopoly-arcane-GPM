@@ -20,8 +20,8 @@ public class MonopolyController {
      */
     @FXML
     protected void onMove() {
-        int indexColumn = this.grid.getColumnIndex(this.person1);
-        int indexRow = this.grid.getRowIndex(this.person1);
+        int indexColumn = GridPane.getColumnIndex(this.person1);
+        int indexRow = GridPane.getRowIndex(this.person1);
 
 
         if(indexRow == 10 && indexColumn > 0){
