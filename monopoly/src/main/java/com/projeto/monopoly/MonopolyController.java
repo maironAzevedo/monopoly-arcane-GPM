@@ -15,19 +15,32 @@ public class MonopolyController {
     @FXML
     private Pane person1;
 
+    /**
+     * Ação utilizada quando se clica o botão centralziado no tabuleiro responsável pela movimentação do boneco.
+     */
     @FXML
     protected void onMove() {
         int indexColumn = this.grid.getColumnIndex(this.person1);
         int indexRow = this.grid.getRowIndex(this.person1);
 
-        indexColumn--;
 
-        this.grid = new GridPane();
+        if(indexRow == 10 && indexColumn > 0){
+            indexColumn--;
+            this.grid = new GridPane();
+            GridPane.setColumnIndex(this.person1, indexColumn);
+        } else if(indexColumn == 0 && indexRow >= 1) {
+            indexRow--;
+            this.grid = new GridPane();
+            GridPane.setRowIndex(this.person1, indexRow);
+        } else if(indexRow == 0 && indexColumn < 10) {
+            indexColumn++;
+            this.grid = new GridPane();
+            GridPane.setColumnIndex(this.person1, indexColumn);
+        } else if(indexColumn == 10 && indexRow >= 0){
+            indexRow++;
+            this.grid = new GridPane();
+            GridPane.setRowIndex(this.person1, indexRow);
+        }
 
-        // 10/10 9/10 8/10 7/10 6/10/ 5/10 4/10 3/10 2/10 1/10 0/10
-        // 0/9 0/8 0/7 0/6 0/5 0/4 0/3 0/2 0/1 0/0
-        // 1/0 2/0 3/0 4/0 5/0 6/0 7/0 8/0 9/0 10/0
-        // 10/1 10/2 10/3 10/4 10/5 10/6 10/7 10/8 10/9 10/10
-        this.grid.setColumnIndex(this.person1, indexColumn);
     }
 }
