@@ -6,7 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.MonopolyController">
+<StackPane maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.controller.MonopolyController">
    <children>
        <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true">
            <columnConstraints>
@@ -42,7 +42,7 @@
        </GridPane>
       <ImageView fitHeight="572.72" fitWidth="572.72" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
          <image>
-            <Image url="@assets/backgroundTable.png" />
+            <Image url="@../assets/backgroundTable.png" />
          </image>
       </ImageView>
       <Button onAction="#onMove" mnemonicParsing="false" prefHeight="78.0" prefWidth="120.0" text="Button" />

@@ -1,4 +1,4 @@
-package com.projeto.monopoly;
+package com.projeto.monopoly.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

@@ -8,4 +8,6 @@ module com.projeto.monopoly {
 
     opens com.projeto.monopoly to javafx.fxml;
     exports com.projeto.monopoly;
+    exports com.projeto.monopoly.controller;
+    opens com.projeto.monopoly.controller to javafx.fxml;
 }
