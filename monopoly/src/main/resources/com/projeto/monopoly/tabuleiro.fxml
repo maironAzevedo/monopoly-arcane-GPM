@@ -38,13 +38,219 @@
          <children>
             <Pane fx:id="person1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: red;" GridPane.columnIndex="10" GridPane.rowIndex="10" />
             <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: blue; -fx-translate-x: 12;" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Ponto-de-Partida.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Beco-Perigoso.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Laboratorio-do-Singed.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Imposta-de-Renda.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Lagoa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Mercado.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Bar-do-Vander.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cofre.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Sorte.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cadeia.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="9">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Esconderijo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="8">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin-5.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Centro.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Escritorio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Arvore.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cofre.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Refugio.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Mural.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estacionamento.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Porto.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="2">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Sorte.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="3">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Fabrica.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="4">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cidade.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="5">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin-2.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="6">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Represa.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="7">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Praça.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="8">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin-4.png" />
+               </image></ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="9">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Universidade.png" />
+               </image></ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="10">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Vá-para-a-Cadeira.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Palacio-da-Caitlyn.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Biblioteca.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cofre.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Salão.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="5">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Estação-Zeppelin-3.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Sorte.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Conselho.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="8">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Taxa-de-Riquesa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="9">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Torre-Hextec.png" />
+               </image>
+            </ImageView>
          </children>
        </GridPane>
-      <ImageView fitHeight="572.72" fitWidth="572.72" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+      <ImageView fitHeight="573.72" fitWidth="573.72" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
          <image>
-            <Image url="@assets/backgroundTable.png" />
+            <Image url="@../../../../../../../../Tabuleiro/Fundo-Centro.png" />
          </image>
       </ImageView>
-      <Button onAction="#onMove" mnemonicParsing="false" prefHeight="78.0" prefWidth="120.0" text="Button" />
+      <Button mnemonicParsing="false" onAction="#onMove" prefHeight="78.0" prefWidth="120.0" text="Button" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="117.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cofre-Dinheiro.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="438.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../../Tabuleiro/Cofre-Sorte.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
    </children>
 </StackPane>
