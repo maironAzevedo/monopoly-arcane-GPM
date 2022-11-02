@@ -8,6 +8,8 @@ public class SlotModel {
     private String type;
 
 
+
+
     public SlotModel(String name, String owner, int value, int rent_price, String type) {
         this.name = name;
         this.owner = owner;

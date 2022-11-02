@@ -14,11 +14,11 @@ public class SlotService {
 
     public SlotService(int indexColumn, int indexRow) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("/slots.json"));
-        String cardPosition = "column"+ indexColumn + " row" + indexRow;
+        JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("../slots.json"));
+        String cardPosition = "column_"+ indexColumn + " row_" + indexRow;
         JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);
 
-        this.slot = new SlotModel("teste", "alguem", 200, 200, "room");
+        //this.slot = new SlotModel("teste", "alguem", 200, 200, "room");
         System.out.println(cardJson);
     }
     public SlotModel getSlot() {

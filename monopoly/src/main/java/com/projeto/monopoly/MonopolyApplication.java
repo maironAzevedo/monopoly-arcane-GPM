@@ -20,7 +20,7 @@ public class MonopolyApplication extends Application {
 
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(MonopolyApplication.class.getResource("tabuleiro.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MonopolyApplication.class.getResource("pages/tabuleiro.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Monopoly Arcane");
         stage.setScene(scene);
