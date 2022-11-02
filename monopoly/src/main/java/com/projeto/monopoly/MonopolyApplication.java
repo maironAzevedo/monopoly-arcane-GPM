@@ -10,7 +10,7 @@ import java.io.IOException;
 public class MonopolyApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader ApplicationMenuLoader = new FXMLLoader(MonopolyApplication.class.getResource("appMenu.fxml"));
+        FXMLLoader ApplicationMenuLoader = new FXMLLoader(MonopolyApplication.class.getResource("tabuleiro.fxml"));
         Scene ApplicationMenuScene = new Scene(ApplicationMenuLoader.load());
         stage.setTitle("Monopoly Arcane");
         stage.setScene(ApplicationMenuScene);
