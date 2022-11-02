@@ -5,6 +5,7 @@ module com.projeto.monopoly {
 
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires json.simple;
 
     opens com.projeto.monopoly to javafx.fxml;
     exports com.projeto.monopoly;
