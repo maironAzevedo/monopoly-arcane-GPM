@@ -24,14 +24,9 @@ public class MonopolyController {
 
 
         indexColumn--;
-        EventHandler<MouseEvent> eventHandler = new EventHandler<MouseEvent>() {
-            public void handle(MouseEvent e) {
-                System.out.println("Passei na grid");
-            }
-        };
+
 
         this.grid = new GridPane();
-        boolean hasMouse = this.grid.addEventHandler(MouseEvent.MOUSE_ENTERED, eventHandler);
 
         // 10/10 9/10 8/10 7/10 6/10/ 5/10 4/10 3/10 2/10 1/10 0/10
         // 0/9 0/8 0/7 0/6 0/5 0/4 0/3 0/2 0/1 0/0
