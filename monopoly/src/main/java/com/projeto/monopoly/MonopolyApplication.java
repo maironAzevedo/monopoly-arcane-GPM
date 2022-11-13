@@ -14,7 +14,6 @@ public class MonopolyApplication extends Application {
         Scene ApplicationMenuScene = new Scene(ApplicationMenuLoader.load());
         stage.setTitle("Monopoly Arcane");
         stage.setScene(ApplicationMenuScene);
-        stage.setFullScreen(true);
         stage.show();
     }
 
