@@ -1,256 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<StackPane maxHeight="700.0" maxWidth="700.0" minHeight="700.0" minWidth="700.0" prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.MonopolyController">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #010A13;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="720.0" prefWidth="720.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
    <children>
-       <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true">
-           <columnConstraints>
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-           </columnConstraints>
-           <rowConstraints>
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-           </rowConstraints>
-         <children>
-            <Pane fx:id="person1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: red;" GridPane.columnIndex="10" GridPane.rowIndex="10" />
-            <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: blue; -fx-translate-x: 12;" GridPane.columnIndex="10" GridPane.rowIndex="10" />
-            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Ponto-de-Partida.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="9" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Beco-Perigoso.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="7" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Laboratorio-do-Singed.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="6" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Imposta-de-Renda.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Lagoa.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="2" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Mercado.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="4" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Bar-do-Vander.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="8" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cofre.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="5" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" GridPane.columnIndex="3" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Sorte.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cadeia.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="86.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="9">
-               <image>
-                  <Image url="@assets/Tabuleiro/Esconderijo.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="8">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin-5.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="7">
-               <image>
-                  <Image url="@assets/Tabuleiro/Centro.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="6">
-               <image>
-                  <Image url="@assets/Tabuleiro/Escritorio.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="5">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin-1.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="4">
-               <image>
-                  <Image url="@assets/Tabuleiro/Arvore.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="3">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cofre.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="2">
-               <image>
-                  <Image url="@assets/Tabuleiro/Refugio.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="90.0" translateX="8.0" GridPane.rowIndex="1">
-               <image>
-                  <Image url="@assets/Tabuleiro/Mural.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estacionamento.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="1">
-               <image>
-                  <Image url="@assets/Tabuleiro/Porto.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="2">
-               <image>
-                  <Image url="@assets/Tabuleiro/Sorte.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="3">
-               <image>
-                  <Image url="@assets/Tabuleiro/Fabrica.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="4">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cidade.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="5">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin-2.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="6">
-               <image>
-                  <Image url="@assets/Tabuleiro/Represa.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="7">
-               <image>
-                  <Image url="@assets/Tabuleiro/Praça.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="8">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin-4.png" />
-               </image></ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" translateX="8.0" GridPane.columnIndex="9">
-               <image>
-                  <Image url="@assets/Tabuleiro/Universidade.png" />
-               </image></ImageView>
-            <ImageView fitHeight="63.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="10">
-               <image>
-                  <Image url="@assets/Tabuleiro/Vá-para-a-Cadeira.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
-               <image>
-                  <Image url="@assets/Tabuleiro/Palacio-da-Caitlyn.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
-               <image>
-                  <Image url="@assets/Tabuleiro/Biblioteca.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cofre.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
-               <image>
-                  <Image url="@assets/Tabuleiro/Salão.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="5">
-               <image>
-                  <Image url="@assets/Tabuleiro/Estação-Zeppelin-3.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
-               <image>
-                  <Image url="@assets/Tabuleiro/Sorte.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
-               <image>
-                  <Image url="@assets/Tabuleiro/Conselho.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="8">
-               <image>
-                  <Image url="@assets/Tabuleiro/Taxa-de-riqueza.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="100.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0" translateX="8.0" GridPane.columnIndex="10" GridPane.rowIndex="9">
-               <image>
-                  <Image url="@assets/Tabuleiro/Torre-Hextec.png" />
-               </image>
-            </ImageView>
-         </children>
-       </GridPane>
-      <ImageView fitHeight="573.72" fitWidth="573.72" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+      <ImageView fitHeight="720.0" fitWidth="720.0" preserveRatio="true" GridPane.columnIndex="1">
          <image>
-            <Image url="@assets/Tabuleiro/Fundo-Centro.png" />
+            <Image url="@assets/tabuleiro/Tabuleiro.png" />
          </image>
       </ImageView>
-      <Button mnemonicParsing="false" onAction="#onMove" prefHeight="78.0" prefWidth="120.0" text="Button" />
       <AnchorPane prefHeight="200.0" prefWidth="200.0">
          <children>
-            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="117.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+            <Text fill="#14d836" layoutX="26.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jogador 1">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="20.0" layoutY="704.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casa Atual: Beco Perigoso">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView layoutX="23.0" layoutY="47.0">
                <image>
-                  <Image url="@assets/Tabuleiro/Cofre-Dinheiro.png" />
+                  <Image url="@assets/tabuleiro/riot-points.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="139.0" fitWidth="139.0" layoutX="438.0" layoutY="433.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@assets/Tabuleiro/Cofre-Sorte.png" />
-               </image>
-            </ImageView>
+            <Text fill="WHITE" layoutX="66.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="350">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Button layoutX="110.0" layoutY="17.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #0B243D;" text="Pausar ll" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="110.0" layoutY="656.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="110.0" layoutY="596.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <GridPane maxHeight="720.0" maxWidth="720.0" minHeight="720.0" minWidth="720.0" prefHeight="720.0" prefWidth="720.0" GridPane.columnIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="82.0" prefWidth="49.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="61.0" minWidth="61.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="61.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="49.0" minHeight="81.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="27.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="62.0" prefHeight="0.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="49.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
    </children>
-</StackPane>
+</GridPane>
