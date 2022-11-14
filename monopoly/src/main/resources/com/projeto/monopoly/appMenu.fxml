@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
    <children>
       <AnchorPane>
          <children>
@@ -48,7 +48,7 @@
                 <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="49.0" prefWidth="257.0" text="Procurar partida" GridPane.rowIndex="4" />
+                  <Button fx:id="StartGameButton" onAction="#StartGame" mnemonicParsing="false" prefHeight="49.0" prefWidth="257.0" text="Jogar" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="269.0" text="Regras" GridPane.rowIndex="2" />
                   <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="249.0" text="Opções" GridPane.rowIndex="1" />
                   <AnchorPane prefHeight="184.0" prefWidth="221.0">
