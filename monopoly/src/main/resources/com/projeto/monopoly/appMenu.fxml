@@ -7,53 +7,53 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.controller.AppMenuController">
    <children>
-      <AnchorPane>
+      <AnchorPane prefHeight="718.0" prefWidth="1280.0">
          <children>
-            <ImageView fitHeight="402.0" fitWidth="713.0">
+            <ImageView fitHeight="720.0" fitWidth="1280.0">
                <image>
                   <Image url="@assets/menu-background.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="402.0" fitWidth="467.0" layoutX="-1.0" opacity="0.7" pickOnBounds="true" smooth="false">
+            <ImageView fitHeight="720.0" fitWidth="828.0" layoutX="-1.0" opacity="0.7" pickOnBounds="true" smooth="false">
                <image>
                   <Image url="@assets/black.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="49.0" fitWidth="299.0" layoutX="102.0" layoutY="152.0" preserveRatio="true">
+            <ImageView fitHeight="93.0" fitWidth="496.0" layoutX="165.0" layoutY="267.0" preserveRatio="true">
                <image>
                   <Image url="@assets/arcane.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="133.0" layoutY="171.0">
+            <ImageView fitHeight="130.0" fitWidth="346.0" layoutX="252.0" layoutY="313.0" preserveRatio="true">
                <image>
                   <Image url="@assets/monopoly-logo.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="402.0" fitWidth="247.0" layoutX="466.0" layoutY="-1.0">
+            <ImageView fitHeight="720.0" fitWidth="454.0" layoutX="827.0">
                <image>
                   <Image url="@assets/blue-filter.png" />
                </image>
             </ImageView>
-            <GridPane layoutX="467.0" prefHeight="402.0" prefWidth="247.0">
+            <GridPane layoutX="827.0" prefHeight="720.0" prefWidth="454.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
               <rowConstraints>
-                  <RowConstraints maxHeight="240.0" minHeight="10.0" prefHeight="183.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="147.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
-                <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="333.0" minHeight="10.0" prefHeight="272.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="209.0" minHeight="10.0" prefHeight="73.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="168.0" minHeight="10.0" prefHeight="75.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="245.0" minHeight="10.0" prefHeight="204.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="StartGameButton" onAction="#StartGame" mnemonicParsing="false" prefHeight="49.0" prefWidth="257.0" text="Jogar" GridPane.rowIndex="4" />
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="269.0" text="Regras" GridPane.rowIndex="2" />
-                  <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="249.0" text="Opções" GridPane.rowIndex="1" />
+                  <Button fx:id="StartGameButton" mnemonicParsing="false" onAction="#StartGame" prefHeight="136.0" prefWidth="454.0" text="Jogar" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" prefHeight="92.0" prefWidth="454.0" text="Regras" GridPane.rowIndex="2" />
+                  <Button mnemonicParsing="false" prefHeight="83.0" prefWidth="454.0" text="Opções" GridPane.rowIndex="1" />
                   <AnchorPane prefHeight="184.0" prefWidth="221.0">
                      <children>
-                        <ImageView fitHeight="49.0" fitWidth="135.0" layoutX="56.0" layoutY="48.0" preserveRatio="true">
+                        <ImageView fitHeight="97.0" fitWidth="232.0" layoutX="111.0" layoutY="45.0" preserveRatio="true">
                            <image>
                               <Image url="@assets/Menu.png" />
                            </image>
