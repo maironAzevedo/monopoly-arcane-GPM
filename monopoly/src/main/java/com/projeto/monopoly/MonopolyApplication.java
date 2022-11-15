@@ -18,14 +18,11 @@ public class MonopolyApplication extends Application {
         stage.show();
         */
 
-
-
         FXMLLoader fxmlLoader = new FXMLLoader(MonopolyApplication.class.getResource("pages/tabuleiro.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Monopoly Arcane");
         stage.setScene(scene);
         stage.show();
-
     }
 
     public static void main(String[] args) {

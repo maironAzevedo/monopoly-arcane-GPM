@@ -47,5 +47,7 @@ public class MonopolyController {
         }
 
         SlotService slotService = new SlotService(indexColumn,indexRow);
+
+        System.out.println(slotService.getSlot());
     }
 }
