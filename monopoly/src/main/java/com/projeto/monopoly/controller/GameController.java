@@ -74,7 +74,6 @@ public class GameController {
         secondDiceImageView.setPreserveRatio(true);
         secondDiceImageView.setFitHeight(72);
 
-
         anchor.getChildren().add(firstDiceImageView);
         anchor.getChildren().add(secondDiceImageView);
     }
