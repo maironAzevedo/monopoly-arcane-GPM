@@ -8,16 +8,17 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MonopolyApplication extends Application {
+
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader ApplicationMenuLoader = new FXMLLoader(MonopolyApplication.class.getResource("appMenu.fxml"));
-        Scene ApplicationMenuScene = new Scene(ApplicationMenuLoader.load());
+        FXMLLoader menuSceneLoader = new FXMLLoader(MonopolyApplication.class.getResource("menuScene.fxml"));
+        Scene menuScene = new Scene(menuSceneLoader.load());
+
         stage.setTitle("Monopoly Arcane");
-        stage.setScene(ApplicationMenuScene);
+        stage.setScene(menuScene);
         stage.show();
     }
-
-    public static void main(String[] args) {
+        public static void main(String[] args) {
         launch();
     }
 }
