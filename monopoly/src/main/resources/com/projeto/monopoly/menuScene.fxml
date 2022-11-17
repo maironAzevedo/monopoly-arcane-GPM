@@ -48,7 +48,7 @@
                 <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="StartGameButton" mnemonicParsing="false" onAction="#StartGame" prefHeight="136.0" prefWidth="454.0" text="Jogar" GridPane.rowIndex="4" />
+                  <Button fx:id="StartGameButton" mnemonicParsing="false" onMouseClicked="#StartGame" prefHeight="136.0" prefWidth="454.0" text="Jogar" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" prefHeight="92.0" prefWidth="454.0" text="Regras" GridPane.rowIndex="2" />
                   <Button mnemonicParsing="false" prefHeight="83.0" prefWidth="454.0" text="Opções" GridPane.rowIndex="1" />
                   <AnchorPane prefHeight="184.0" prefWidth="221.0">
