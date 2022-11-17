@@ -1,33 +1,31 @@
 <component name="ArtifactManager">
-  <artifact name="monopoly:jar">
+  <artifact type="jar" name="monopoly:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/monopoly_jar</output-path>
-    <root id="root">
-      <element id="archive" name="monopoly.jar">
-        <element id="module-output" name="monopoly" />
-      </element>
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:win:18.0.1" />
-      <element id="library" level="project" name="Maven: eu.hansolo:toolboxfx:17.0.31" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:win:17.0.2" />
-      <element id="library" level="project" name="Maven: eu.hansolo.fx:heatmap:17.0.12" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:win:17.0.2" />
-      <element id="library" level="project" name="Maven: com.googlecode.json-simple:json-simple:1.1.1" />
-      <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:win:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:win:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-base:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-controls:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:win:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-media:17.0.2" />
-      <element id="library" level="project" name="Maven: org.kordamp.bootstrapfx:bootstrapfx-core:0.4.0" />
-      <element id="library" level="project" name="Maven: eu.hansolo.fx:countries:17.0.23" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-fxml:17.0.2" />
-      <element id="library" level="project" name="Maven: junit:junit:4.10" />
-      <element id="library" level="project" name="Maven: eu.hansolo:tilesfx:17.1.9" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-graphics:17.0.2" />
-      <element id="library" level="project" name="Maven: eu.hansolo:toolbox:17.0.33" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-web:win:17.0.2" />
-      <element id="library" level="project" name="Maven: org.openjfx:javafx-swing:18.0.1" />
+    <root id="archive" name="monopoly.jar">
+      <element id="module-output" name="monopoly" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-swing/18.0.1/javafx-swing-18.0.1-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/toolbox/17.0.33/toolbox-17.0.33.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/17.0.2/javafx-web-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/toolboxfx/17.0.31/toolboxfx-17.0.31.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/fx/countries/17.0.23/countries-17.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/17.0.2/javafx-media-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/fx/heatmap/17.0.12/heatmap-17.0.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/junit/junit/4.10/junit-4.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-media/17.0.2/javafx-media-17.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-swing/18.0.1/javafx-swing-18.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-graphics/17.0.2/javafx-graphics-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-web/17.0.2/javafx-web-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-base/17.0.2/javafx-base-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/eu/hansolo/tilesfx/17.1.9/tilesfx-17.1.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/17.0.2/javafx-fxml-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/17.0.2/javafx-controls-17.0.2-win.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
