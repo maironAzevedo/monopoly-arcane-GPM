@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="736.0" layoutY="561.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="255.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/image%209.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button layoutX="377.0" layoutY="561.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="255.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Voltar%20ao%20Menu.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Label layoutX="150.0" layoutY="20.0" prefHeight="45.0" prefWidth="147.0" text="Jogadores" textFill="#d4ffff">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="87.0" fitWidth="983.0" layoutX="140.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Rectangle%20103.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="163.0" layoutY="104.0" promptText="Nome jogador" />
+      <RadioButton layoutX="371.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%204.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="427.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%205.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="483.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%206.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="536.0" layoutY="93.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%207.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <ComboBox layoutX="626.0" layoutY="103.0" prefWidth="150.0" promptText="Tipo jogador" />
+      <ImageView fitHeight="87.0" fitWidth="983.0" layoutX="139.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Rectangle%20103.png" />
+         </image>
+      </ImageView>
+      <ComboBox layoutX="635.0" layoutY="222.0" prefWidth="150.0" promptText="Tipo jogador" />
+      <RadioButton layoutX="540.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%207.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="487.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%206.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="431.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%205.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="375.0" layoutY="200.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%204.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <TextField layoutX="171.0" layoutY="222.0" promptText="Nome jogador" />
+      <ImageView fitHeight="87.0" fitWidth="983.0" layoutX="137.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Rectangle%20103.png" />
+         </image>
+      </ImageView>
+      <ComboBox layoutX="637.0" layoutY="332.0" prefWidth="150.0" promptText="Tipo jogador" />
+      <RadioButton layoutX="546.0" layoutY="318.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%207.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="493.0" layoutY="318.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%206.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="437.0" layoutY="318.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%205.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="381.0" layoutY="318.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%204.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <TextField layoutX="173.0" layoutY="329.0" promptText="Nome jogador" />
+      <ImageView fitHeight="87.0" fitWidth="983.0" layoutX="135.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/Rectangle%20103.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="179.0" layoutY="450.0" promptText="Nome jogador" />
+      <RadioButton layoutX="386.0" layoutY="437.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%204.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="443.0" layoutY="438.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%205.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="498.0" layoutY="440.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%206.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="551.0" layoutY="440.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/jonat/git/monopoly-arcane-GPM/monopoly/src/main/resources/com/projeto/monopoly/assets/Pino%207.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <ComboBox layoutX="636.0" layoutY="452.0" prefWidth="150.0" promptText="Tipo jogador" />
+   </children>
+</AnchorPane>
