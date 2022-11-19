@@ -25,6 +25,10 @@ public class GameController {
     @FXML
     private AnchorPane anchor;
 
+    /** Este método carrega da base de assets a imagem de dado correspondente ao valor
+     * @param diceValue Valor gerado aleatóriamente
+     * @return Imagem do dado
+     */
     protected Image getDiceImage(int diceValue) throws FileNotFoundException {
         FileInputStream diceImage;
         String baseUrl = "src/main/resources/com/projeto/monopoly/assets/dices/";
@@ -53,21 +57,18 @@ public class GameController {
         }
     }
 
-    @FXML
-    protected void rollDices(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
-        anchor.getChildren().clear();
-        Random random = new Random();
-        int diceValue = random.nextInt(1,6);
-
-        Image firstDiceImage = getDiceImage(diceValue);
+    /**
+     * Método que realiza a representação gráfica das imagens dos dados na interface
+     * @param firstDiceImage imagem do primeiro dado
+     * @param secondDiceImage imagem do segundo dado
+     */
+    protected void plotDices(Image firstDiceImage, Image secondDiceImage) {
         ImageView firstDiceImageView = new ImageView(firstDiceImage);
         firstDiceImageView.setX(105);
         firstDiceImageView.setY(486);
         firstDiceImageView.setPreserveRatio(true);
         firstDiceImageView.setFitHeight(72);
 
-        diceValue = random.nextInt(1,6);
-        Image secondDiceImage = getDiceImage(diceValue);
         ImageView secondDiceImageView = new ImageView(secondDiceImage);
         secondDiceImageView.setX(195);
         secondDiceImageView.setY(486);
@@ -78,8 +79,28 @@ public class GameController {
         anchor.getChildren().add(secondDiceImageView);
     }
 
+    /** Método responsável por realizar a lógica da rolagem de dados no jogo
+    * @param mouseEvent Evento de clique no botão
+    * @return Inteiro que representa a soma dos valores dos dados
+    */
+    @FXML
+    protected int rollDices(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
+        anchor.getChildren().clear();
+        Random random = new Random();
+        int firstDiceValue = random.nextInt(1,6);
+        Image firstDiceImage = getDiceImage(firstDiceValue);
+
+        int secondDiceValue = random.nextInt(1,6);
+        Image secondDiceImage = getDiceImage(secondDiceValue);
+
+        plotDices(firstDiceImage, secondDiceImage);
+
+        int totalDiceValue = firstDiceValue + secondDiceValue;
+        return totalDiceValue;
+    }
+
     /**
-     * Ação utilizada quando se clica o botão centralziado no tabuleiro responsável pela movimentação do boneco.
+     * Método utilizado para implementar a lógica de movimentação do jogador
      */
     @FXML
     protected void onMove() {
