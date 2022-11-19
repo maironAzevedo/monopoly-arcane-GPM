@@ -7,7 +7,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #010A13;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #010A13;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.projeto.monopoly.controller.GameController">
   <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="720.0" minWidth="720.0" prefWidth="720.0" />
@@ -48,6 +48,8 @@
       </AnchorPane>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
          <children>
+             <AnchorPane fx:id="anchor" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+             </AnchorPane>
             <Button layoutX="110.0" layoutY="17.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #0B243D;" text="Pausar ll" textFill="WHITE">
                <font>
                   <Font name="Arial" size="20.0" />
@@ -58,7 +60,7 @@
                   <Font name="Arial Bold" size="18.0" />
                </font>
             </Button>
-            <Button layoutX="110.0" layoutY="596.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
+            <Button onMouseClicked="#rollDices" layoutX="110.0" layoutY="596.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
                <font>
                   <Font name="Arial" size="18.0" />
                </font>
