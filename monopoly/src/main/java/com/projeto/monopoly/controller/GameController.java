@@ -12,10 +12,6 @@ import java.io.FileNotFoundException;
 import java.util.*;
 
 public class GameController {
-
-    @FXML
-    private Label welcomeText;
-
     @FXML
     private GridPane grid;
 
@@ -125,6 +121,5 @@ public class GameController {
             this.grid = new GridPane();
             GridPane.setRowIndex(this.person1, indexRow);
         }
-
     }
 }
