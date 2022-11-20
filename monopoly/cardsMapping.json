@@ -1,0 +1,163 @@
+{
+  "column_10 row_10": {
+    "title": "Início",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/inicio.png"
+  },
+  "column_9 row_10": {
+    "title": "Beco Perigoso",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/beco-perigoso.png"
+
+  },
+  "column_8 row_10": {
+    "title": "Cofre",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/cofre.png"
+  },
+  "column_7 row_10": {
+    "title": "Laboratório do Singed",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/laboratorio-do-singed.png"
+  },
+  "column_6 row_10": {
+    "title": "Imposto de Renda",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/imposto-de-renda.png"
+  },
+  "column_5 row_10": {
+    "title": "Estação Zeppelin Sul",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/estacao-zep-sul.png"
+  },
+  "column_4 row_10": {
+    "title": "Bar do Vander",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/bar-do-vander.png"
+  },
+  "column_3 row_10": {
+    "title": "Sorte",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/sorte.png"
+  },
+  "column_2 row_10": {
+    "title": "Lagoa",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/lagoa.png"
+  },
+  "column_1 row_10": {
+    "title": "Mercado",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/mercado.png"
+  },
+  "column_0 row_10": {
+    "title": "Cadeia",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/cadeia.png"
+  },
+  "column_0 row_9": {
+    "title": "Esconderijo",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/esconderijo.png"
+  },
+  "column_0 row_8": {
+    "title": "Companhia de Energia Hextec",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/companhia-energia.png"
+  },
+  "column_0 row_7": {
+    "title": "Centro",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/centro.png"
+  },
+  "column_0 row_6": {
+    "title": "Escritório",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/escritorio.png"
+  },
+  "column_0 row_5": {
+    "title": "Estação Zeppelin Oeste",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/estacao-zep-oes.png"
+  },
+  "column_0 row_4": {
+    "title": "Árvore",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/arvore.png"
+  },
+  "column_0 row_3": {
+    "title": "Cofre",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/cofre.png"
+  },
+  "column_0 row_2": {
+    "title": "Refúgio",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/refugio.png"
+  },
+  "column_0 row_1": {
+    "title": "Mural",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/mural.png"
+  },
+  "column_0 row_0": {
+    "title": "Estacionamento",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/estacionamento.png"
+  },
+  "column_1 row_0": {
+    "title": "Porto",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/porto.png"
+  },
+  "column_2 row_0": {
+    "title": "Sorte",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/sorte.png"
+  },
+  "column_3 row_0": {
+    "title": "Fábrica",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/fabrica.png"
+  },
+  "column_4 row_0": {
+    "title": "Cidade",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/cidade.png"
+  },
+  "column_5 row_0": {
+    "title": "Estação Zeppelin Norte",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/estacao-zep-nor.png"
+  },
+  "column_6 row_0": {
+    "title": "Represa",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/represa.png"
+  },
+  "column_7 row_0": {
+    "title": "Praça",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/praca.png"
+  },
+  "column_8 row_0": {
+    "title": "Companhia de Distribuição de Água",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/companhia-agua.png"
+  },
+  "column_9 row_0": {
+    "title": "Universidade",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/universidade.png"
+  },
+  "column_10 row_0": {
+    "title": "Vá para a cadeia",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/va-para-cadeia.png"
+  },
+  "column_10 row_1": {
+    "title": "Palácio da Caitlyn",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/palacio-da-cait.png"
+  },
+  "column_10 row_2": {
+    "title": "Biblioteca",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/biblioteca.png"
+  },
+  "column_10 row_3": {
+    "title": "Cofre",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/cofre.png"
+  },
+  "column_10 row_4": {
+    "title": "Salão",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/salao.png"
+  },
+  "column_10 row_5": {
+    "title": "Estação Zeppelin Leste",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/estacao-zep-les.png"
+  },
+  "column_10 row_6": {
+    "title": "Sorte",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/sorte.png"
+  },
+  "column_10 row_7": {
+    "title": "Conselho",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/conselho.png"
+  },
+  "column_10 row_8": {
+    "title": "Taxa de Riqueza",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/taxa-de-riqueza.png"
+  },
+  "column_10 row_9": {
+    "title": "Torre Hextec",
+    "image-path": "src/main/resources/com/projeto/monopoly/assets/cards/torre-extec.png"
+  }
+}

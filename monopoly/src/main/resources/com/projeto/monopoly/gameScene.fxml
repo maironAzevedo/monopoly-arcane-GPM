@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #010a13;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.controller.GameController">
+   <children>
+      <ImageView fitHeight="727.0" fitWidth="720.0" layoutX="280.0" preserveRatio="true">
+         <image>
+            <Image url="@assets/tabuleiro/Tabuleiro.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="2.0" layoutY="5.0" prefHeight="720.0" prefWidth="277.0">
+         <children>
+            <AnchorPane fx:id="cardsAnchor"></AnchorPane>
+            <Text fill="#14d836" layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jogador 1">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="23.0" layoutY="701.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Casa Atual: Beco Perigoso">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="35.0" fitWidth="33.0" layoutX="14.0" layoutY="46.0" preserveRatio="true">
+               <image>
+                  <Image url="@assets/tabuleiro/riot-points.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="51.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="350">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1005.0" layoutY="-1.0" prefHeight="720.0" prefWidth="277.0">
+         <children>
+            <AnchorPane fx:id="dicesAnchor"></AnchorPane>
+            <Button layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="61.0" layoutY="14.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #0B243D;" text="Pausar ll" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="61.0" layoutY="595.0" mnemonicParsing="false" onMouseClicked="#rollDices" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <GridPane fx:id="grid" gridLinesVisible="true" layoutX="280.0" maxHeight="720.0" maxWidth="720.0" minHeight="720.0" minWidth="720.0" prefHeight="720.0" prefWidth="720.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="82.0" prefWidth="49.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="61.0" minWidth="61.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="61.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.0" minWidth="62.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="82.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="49.0" minHeight="81.0" prefHeight="49.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="27.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="62.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="61.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="60.0" minHeight="62.0" prefHeight="0.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="49.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="3" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="4" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="5" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="6" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="7" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="8" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

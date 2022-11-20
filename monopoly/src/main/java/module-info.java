@@ -11,4 +11,6 @@ module com.projeto.monopoly {
     exports com.projeto.monopoly;
     exports com.projeto.monopoly.controller;
     opens com.projeto.monopoly.controller to javafx.fxml;
+    exports com.projeto.monopoly.core;
+    opens com.projeto.monopoly.core to javafx.fxml;
 }
