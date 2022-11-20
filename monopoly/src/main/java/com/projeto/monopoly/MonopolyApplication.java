@@ -17,8 +17,10 @@ public class MonopolyApplication extends Application {
         stage.setTitle("Monopoly Arcane");
         stage.setScene(menuScene);
         stage.show();
+
     }
-        public static void main(String[] args) {
+
+    public static void main(String[] args) {
         launch();
     }
 }
