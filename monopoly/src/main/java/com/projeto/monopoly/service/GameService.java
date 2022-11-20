@@ -6,8 +6,19 @@ import javafx.scene.layout.AnchorPane;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.Random;
 
 public class GameService {
+
+    /**
+     * Método responsável por gerar um número aleatório de 1 a 6
+     * @return Valor gerado aleatóriamente
+     */
+    public static int generateDiceNumber() {
+        Random random = new Random();
+        int randomDiceValue = random.nextInt(1,6);
+        return randomDiceValue;
+    }
 
     /**
      * Método responsável por carregar a imagem correspondente ao valor do dado
@@ -74,7 +85,8 @@ public class GameService {
      * @throws FileNotFoundException Caso o arquivo não exista
      */
     public static Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
-        /*JSONParser parser = new JSONParser();
+        /*
+        JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("cardsMapping.json"));
         String cardPosition = "ccolumn_" + columnIndex + " row_" + rowIndex;
         JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);

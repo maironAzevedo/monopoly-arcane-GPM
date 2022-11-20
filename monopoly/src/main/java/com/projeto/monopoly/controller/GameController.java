@@ -1,5 +1,6 @@
 package com.projeto.monopoly.controller;
 
+import com.projeto.monopoly.core.BaseController;
 import com.projeto.monopoly.service.GameService;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -8,7 +9,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.*;
 
@@ -25,19 +25,18 @@ public class GameController extends BaseController {
     @FXML
     private AnchorPane dicesAnchor;
 
-
     /** Método responsável por realizar a lógica da rolagem de dados no jogo
     * @return Inteiro que representa a soma dos valores dos dados
     * @throws FileNotFoundException Caso a imagem não seja encontrada
     */
     @FXML
-    protected int rollDices() throws FileNotFoundException {
+    public int rollDices() throws FileNotFoundException {
         dicesAnchor.getChildren().clear();
-        Random random = new Random();
-        int firstDiceValue = random.nextInt(1,6);
+
+        int firstDiceValue = GameService.generateDiceNumber();
         Image firstDiceImage = GameService.getDiceImage(firstDiceValue);
 
-        int secondDiceValue = random.nextInt(1,6);
+        int secondDiceValue = GameService.generateDiceNumber();
         Image secondDiceImage = GameService.getDiceImage(secondDiceValue);
 
         GameService.plotDices(firstDiceImage, secondDiceImage, dicesAnchor);
@@ -52,17 +51,16 @@ public class GameController extends BaseController {
      * @throws FileNotFoundException caso a imagem não seja encontrada
      */
     @FXML
-    protected void showCard(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
+    public void showCard(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
         cardsAnchor.getChildren().clear();
 
-        Node node = (Node) mouseEvent.getPickResult().getIntersectedNode();
-        int columnIndex = GridPane.getColumnIndex(node);
-        int rowIndex = GridPane.getRowIndex(node);
+        Node clickedNode = mouseEvent.getPickResult().getIntersectedNode();
+        int columnIndex = GridPane.getColumnIndex(clickedNode);
+        int rowIndex = GridPane.getRowIndex(clickedNode);
 
         Image cardImage = GameService.getCardImage(columnIndex, rowIndex);
         GameService.plotCard(cardImage, cardsAnchor);
     }
-
     /**
      * Método utilizado para implementar a lógica de movimentação do jogador
      */
