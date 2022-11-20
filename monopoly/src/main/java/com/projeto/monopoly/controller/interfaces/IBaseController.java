@@ -1,4 +1,4 @@
-package com.projeto.monopoly.interfaces;
+package com.projeto.monopoly.controller.interfaces;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;

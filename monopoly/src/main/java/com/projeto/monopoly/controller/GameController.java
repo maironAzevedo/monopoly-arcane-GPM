@@ -1,17 +1,18 @@
 package com.projeto.monopoly.controller;
 
+import com.projeto.monopoly.service.GameService;
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.scene.Node;
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.*;
 
-public class GameController {
+public class GameController extends BaseController {
     @FXML
     private GridPane grid;
 
@@ -19,80 +20,47 @@ public class GameController {
     private Pane person1;
 
     @FXML
-    private AnchorPane anchor;
+    private AnchorPane cardsAnchor;
 
-    /** Este método carrega da base de assets a imagem de dado correspondente ao valor
-     * @param diceValue Valor gerado aleatóriamente
-     * @return Imagem do dado
-     */
-    protected Image getDiceImage(int diceValue) throws FileNotFoundException {
-        FileInputStream diceImage;
-        String baseUrl = "src/main/resources/com/projeto/monopoly/assets/dices/";
-        switch (diceValue) {
-            case 1:
-                diceImage = new FileInputStream(baseUrl + "dice_1.png");
-                return new Image(diceImage);
-            case 2:
-                diceImage = new FileInputStream(baseUrl + "dice_2.png");
-                return new Image(diceImage);
-            case 3:
-                diceImage = new FileInputStream(baseUrl + "dice_3.png");
-                return new Image(diceImage);
-            case 4:
-                diceImage = new FileInputStream(baseUrl + "dice_4.png");
-                return new Image(diceImage);
-            case 5:
-                diceImage = new FileInputStream(baseUrl + "dice_5.png");
-                return new Image(diceImage);
-            case 6:
-                diceImage = new FileInputStream(baseUrl + "dice_6.png");
-                return new Image(diceImage);
+    @FXML
+    private AnchorPane dicesAnchor;
 
-            default:
-                return null;
-        }
-    }
-
-    /**
-     * Método que realiza a representação gráfica das imagens dos dados na interface
-     * @param firstDiceImage imagem do primeiro dado
-     * @param secondDiceImage imagem do segundo dado
-     */
-    protected void plotDices(Image firstDiceImage, Image secondDiceImage) {
-        ImageView firstDiceImageView = new ImageView(firstDiceImage);
-        firstDiceImageView.setX(105);
-        firstDiceImageView.setY(486);
-        firstDiceImageView.setPreserveRatio(true);
-        firstDiceImageView.setFitHeight(72);
-
-        ImageView secondDiceImageView = new ImageView(secondDiceImage);
-        secondDiceImageView.setX(195);
-        secondDiceImageView.setY(486);
-        secondDiceImageView.setPreserveRatio(true);
-        secondDiceImageView.setFitHeight(72);
-
-        anchor.getChildren().add(firstDiceImageView);
-        anchor.getChildren().add(secondDiceImageView);
-    }
 
     /** Método responsável por realizar a lógica da rolagem de dados no jogo
-    * @param mouseEvent Evento de clique no botão
     * @return Inteiro que representa a soma dos valores dos dados
+    * @throws FileNotFoundException Caso a imagem não seja encontrada
     */
     @FXML
-    protected int rollDices(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
-        anchor.getChildren().clear();
+    protected int rollDices() throws FileNotFoundException {
+        dicesAnchor.getChildren().clear();
         Random random = new Random();
         int firstDiceValue = random.nextInt(1,6);
-        Image firstDiceImage = getDiceImage(firstDiceValue);
+        Image firstDiceImage = GameService.getDiceImage(firstDiceValue);
 
         int secondDiceValue = random.nextInt(1,6);
-        Image secondDiceImage = getDiceImage(secondDiceValue);
+        Image secondDiceImage = GameService.getDiceImage(secondDiceValue);
 
-        plotDices(firstDiceImage, secondDiceImage);
+        GameService.plotDices(firstDiceImage, secondDiceImage, dicesAnchor);
 
         int totalDiceValue = firstDiceValue + secondDiceValue;
         return totalDiceValue;
+    }
+
+    /**
+     * Método responsável pela exibição gráfica de cartas
+     * @param mouseEvent Evento de clique na grid
+     * @throws FileNotFoundException caso a imagem não seja encontrada
+     */
+    @FXML
+    protected void showCard(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
+        cardsAnchor.getChildren().clear();
+
+        Node node = (Node) mouseEvent.getPickResult().getIntersectedNode();
+        int columnIndex = GridPane.getColumnIndex(node);
+        int rowIndex = GridPane.getRowIndex(node);
+
+        Image cardImage = GameService.getCardImage(columnIndex, rowIndex);
+        GameService.plotCard(cardImage, cardsAnchor);
     }
 
     /**
