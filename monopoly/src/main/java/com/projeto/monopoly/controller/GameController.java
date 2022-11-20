@@ -1,9 +1,14 @@
 package com.projeto.monopoly.controller;
 
+import eu.hansolo.toolbox.tuples.Tuple;
 import javafx.fxml.FXML;
+import javafx.geometry.Point3D;
+import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.input.PickResult;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -60,13 +65,13 @@ public class GameController {
      */
     protected void plotDices(Image firstDiceImage, Image secondDiceImage) {
         ImageView firstDiceImageView = new ImageView(firstDiceImage);
-        firstDiceImageView.setX(105);
+        firstDiceImageView.setX(60);
         firstDiceImageView.setY(486);
         firstDiceImageView.setPreserveRatio(true);
         firstDiceImageView.setFitHeight(72);
 
         ImageView secondDiceImageView = new ImageView(secondDiceImage);
-        secondDiceImageView.setX(195);
+        secondDiceImageView.setX(150);
         secondDiceImageView.setY(486);
         secondDiceImageView.setPreserveRatio(true);
         secondDiceImageView.setFitHeight(72);
@@ -93,6 +98,31 @@ public class GameController {
 
         int totalDiceValue = firstDiceValue + secondDiceValue;
         return totalDiceValue;
+    }
+
+    protected Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
+        FileInputStream cardImage;
+        String baseUrl = "src/main/resources/com/projeto/monopoly/assets/cards/";
+        if((columnIndex == 2 && rowIndex == 0) ||
+        (columnIndex == 3 && rowIndex == 10) ||
+        (columnIndex == 10 && rowIndex == 6)) {
+            cardImage = new FileInputStream(baseUrl + "dice_3.png");
+            return new Image(cardImage);
+        }
+        return null;
+    }
+
+    /**
+     * Método responsável pela exibição gráfica de cartas
+     * @param mouseEvent Evento de clique na grid
+     */
+    @FXML
+    protected void showCard(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
+        System.out.println(mouseEvent);
+        Node node = (Node) mouseEvent.getSource();
+        int rowIndex = GridPane.getColumnIndex(node);
+        int columnIndex = GridPane.getColumnIndex(node);
+        System.out.println("Coluna: " + columnIndex + "\nLinha: " + rowIndex );
     }
 
     /**
