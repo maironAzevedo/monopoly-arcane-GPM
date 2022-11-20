@@ -14,6 +14,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.*;
 
 public class GameController {
@@ -101,6 +102,11 @@ public class GameController {
     }
 
     protected Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
+        JSONParser parser = new JSONParser();
+        JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("cardsMapping.json"));
+        String cardPosition = "ccolumn_" + columnIndex + " row_" + rowIndex;
+        JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);
+        string ImagePath = (String) cardJson.get("image-path");
         FileInputStream cardImage;
         String baseUrl = "src/main/resources/com/projeto/monopoly/assets/cards/";
         if((columnIndex == 2 && rowIndex == 0) ||
