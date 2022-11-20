@@ -101,7 +101,7 @@ public class GameController {
         return totalDiceValue;
     }
 
-    protected Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
+    /* protected Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("cardsMapping.json"));
         String cardPosition = "ccolumn_" + columnIndex + " row_" + rowIndex;
@@ -116,7 +116,7 @@ public class GameController {
             return new Image(cardImage);
         }
         return null;
-    }
+    }*/
 
     /**
      * Método responsável pela exibição gráfica de cartas
