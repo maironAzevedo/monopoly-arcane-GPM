@@ -21,6 +21,5 @@ Repositório criado no intuito de armazenar a aplicação desenvolvida para a di
 - Vá na aba JRE 
 - Min JRE version: 17.0.2
 - Clica na engrenagem e dale
+- <strong>Ao gerar o exe, lembre-se de por os assets e json na msm pasta do .exe</strong>
 
-
-### Ao gerar o exe, lembre-se de por os assets e json na msm pasta do .exe
