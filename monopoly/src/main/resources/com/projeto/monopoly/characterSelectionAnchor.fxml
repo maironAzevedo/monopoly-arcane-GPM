@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="characterSelection" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="87.0" fitWidth="983.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/lobby/selecao-background.png" />
+         </image>
+      </ImageView>
+      <RadioButton layoutX="396.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/pino-roxo.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="343.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/pino-verde.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="287.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/pino-azul.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="231.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/pino-rosa.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </RadioButton>
+      <TextField layoutX="22.0" layoutY="30.0" promptText="Nome jogador">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TextField>
+      <ComboBox layoutX="492.0" layoutY="31.0" prefWidth="150.0" promptText="Tipo jogador">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ComboBox>
+   </children>
+</AnchorPane>

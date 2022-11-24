@@ -10,22 +10,22 @@
    <children>
       <ImageView fitHeight="544.0" fitWidth="713.0" preserveRatio="true">
          <image>
-            <Image url="@assets/loading-background.png" />
+            <Image url="@assets/loading/loading-background.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="67.0" fitWidth="185.0" layoutX="264.0" layoutY="169.0" preserveRatio="true">
          <image>
-            <Image url="@assets/monopoly-arcane-logo.png" />
+            <Image url="@assets/loading/monopoly-arcane-logo.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="200.0" fitWidth="152.0" layoutX="59.0" layoutY="100.0">
          <image>
-            <Image url="@assets/jinx-image.png" />
+            <Image url="@assets/loading/jinx-image.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="233.0" fitWidth="223.0" layoutX="461.0" layoutY="84.0" preserveRatio="true">
          <image>
-            <Image url="@assets/vi-image.png" />
+            <Image url="@assets/loading/vi-image.png" />
          </image>
       </ImageView>
    </children>

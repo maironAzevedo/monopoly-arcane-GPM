@@ -13,27 +13,27 @@
          <children>
             <ImageView fitHeight="720.0" fitWidth="1280.0">
                <image>
-                  <Image url="@assets/menu-background.png" />
+                  <Image url="@assets/menu/menu-background.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="720.0" fitWidth="828.0" layoutX="-1.0" opacity="0.7" pickOnBounds="true" smooth="false">
                <image>
-                  <Image url="@assets/black.png" />
+                  <Image url="@assets/menu/black.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="93.0" fitWidth="496.0" layoutX="165.0" layoutY="267.0" preserveRatio="true">
                <image>
-                  <Image url="@assets/arcane.png" />
+                  <Image url="@assets/menu/arcane.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="130.0" fitWidth="346.0" layoutX="252.0" layoutY="313.0" preserveRatio="true">
                <image>
-                  <Image url="@assets/monopoly-logo.png" />
+                  <Image url="@assets/menu/monopoly-logo.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="720.0" fitWidth="454.0" layoutX="827.0">
                <image>
-                  <Image url="@assets/blue-filter.png" />
+                  <Image url="@assets/menu/blue-filter.png" />
                </image>
             </ImageView>
             <GridPane layoutX="827.0" prefHeight="720.0" prefWidth="454.0">
@@ -55,7 +55,7 @@
                      <children>
                         <ImageView fitHeight="97.0" fitWidth="232.0" layoutX="111.0" layoutY="45.0" preserveRatio="true">
                            <image>
-                              <Image url="@assets/Menu.png" />
+                              <Image url="@assets/menu/Menu.png" />
                            </image>
                         </ImageView>
                      </children>

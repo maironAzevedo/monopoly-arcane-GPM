@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projeto.monopoly.controller.LobbyController">
+   <children>
+      <Label layoutX="150.0" layoutY="20.0" prefHeight="45.0" prefWidth="147.0" text="Jogadores" textFill="#d4ffff">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="addPlayerButton" onMouseClicked="#addNewPlayer" fitHeight="45.0" fitWidth="47.0" layoutX="1073.0" layoutY="270.0" preserveRatio="true">
+         <image>
+            <Image url="@assets/lobby/add-button.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <AnchorPane fx:id="addPlayerAnchor">
+         <AnchorPane fx:id="addPlayerNode" layoutX="135.0" layoutY="70.0">
+            <children>
+               <ImageView fitHeight="87.0" fitWidth="983.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@assets/lobby/selecao-background.png" />
+                  </image>
+               </ImageView>
+               <RadioButton layoutX="396.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-roxo.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <RadioButton layoutX="343.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-verde.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <RadioButton layoutX="287.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-azul.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <RadioButton layoutX="231.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-rosa.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </RadioButton>
+               <TextField layoutX="22.0" layoutY="30.0" promptText="Nome jogador">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </TextField>
+               <ComboBox layoutX="492.0" layoutY="31.0" prefWidth="150.0" promptText="Tipo jogador">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ComboBox>
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="addPlayerNode_1" layoutX="135.0" layoutY="170.0">
+            <children>
+               <ImageView fitHeight="87.0" fitWidth="983.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@assets/lobby/selecao-background.png" />
+                  </image>
+               </ImageView>
+               <RadioButton layoutX="396.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-roxo.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+               </RadioButton>
+               <RadioButton layoutX="343.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-verde.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+               </RadioButton>
+               <RadioButton layoutX="287.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-azul.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+               </RadioButton>
+               <RadioButton layoutX="231.0" layoutY="20.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="31.0" textAlignment="CENTER">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+                  <effect>
+                     <ImageInput>
+                        <source>
+                           <Image url="@assets/lobby/pino-rosa.png" />
+                        </source>
+                     </ImageInput>
+                  </effect>
+               </RadioButton>
+               <TextField layoutX="22.0" layoutY="30.0" promptText="Nome jogador">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </TextField>
+               <ComboBox layoutX="492.0" layoutY="31.0" prefWidth="150.0" promptText="Tipo jogador">
+                  <cursor>
+                     <Cursor fx:constant="HAND" />
+                  </cursor>
+               </ComboBox>
+            </children>
+         </AnchorPane>
+      </AnchorPane>
+      <Button onMouseClicked="#findMatch" layoutX="662.0" layoutY="622.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="255.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/find-match.png" />
+               </source>
+            </ImageInput>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="371.0" layoutY="622.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="255.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="@assets/lobby/voltar-ao-menu.png" />
+               </source>
+            </ImageInput>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
