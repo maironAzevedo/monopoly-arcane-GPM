@@ -9,7 +9,7 @@ import java.io.IOException;
 public class AppMenuService {
 
     /**
-     * Método responsável por carregar a cena do tabuleiro do jogo
+     * Método responsável por carregar a cena do lobby do jogo
      * @return Cena do jogo
      * @throws IOException Caso exista algum erro na entrada ou saída de dados
      */
