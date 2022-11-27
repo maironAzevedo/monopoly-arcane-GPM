@@ -44,6 +44,7 @@ public class LobbyController extends BaseController {
     public void findMatch(MouseEvent event) throws IOException {
         Node clickedNode = (Node) event.getSource();
         Stage stage = (Stage) clickedNode.getScene().getWindow();
+
         FXMLLoader gameLoader = new FXMLLoader(MonopolyApplication.class.getResource("gameScene.fxml"));
         Scene gameScene = new Scene(gameLoader.load());
         changeScene(gameScene, stage);
