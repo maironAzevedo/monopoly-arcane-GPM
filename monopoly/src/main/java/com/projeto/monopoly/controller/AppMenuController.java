@@ -21,8 +21,8 @@ public class AppMenuController extends BaseController {
     @FXML
     public void StartGame(MouseEvent event) throws Exception {
         Node clickedNode = (Node) event.getSource();
-        Scene gameScene = AppMenuService.getGameScene();
+        Scene lobbyScene = AppMenuService.getLobbyScene();
         Stage stage = (Stage) clickedNode.getScene().getWindow();
-        changeScene(gameScene, stage);
+        changeScene(lobbyScene, stage);
     }
 }

@@ -9,14 +9,14 @@ import java.io.IOException;
 public class AppMenuService {
 
     /**
-     * Método responsável por carregar a cena do tabuleiro do jogo
+     * Método responsável por carregar a cena do lobby do jogo
      * @return Cena do jogo
      * @throws IOException Caso exista algum erro na entrada ou saída de dados
      */
-    public static Scene getGameScene() throws IOException {
-        FXMLLoader gameSceneLoader = new FXMLLoader(MonopolyApplication.class.getResource("gameScene.fxml"));
-        Scene gameScene = new Scene(gameSceneLoader.load());
+    public static Scene getLobbyScene() throws IOException {
+        FXMLLoader lobbySceneLoader = new FXMLLoader(MonopolyApplication.class.getResource("lobbyScene.fxml"));
+        Scene lobbyScene = new Scene(lobbySceneLoader.load());
 
-        return gameScene;
+        return lobbyScene;
     }
 }
