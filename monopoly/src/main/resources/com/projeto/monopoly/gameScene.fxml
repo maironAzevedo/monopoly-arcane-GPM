@@ -117,27 +117,27 @@
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="10" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="10" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="9" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="8" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="7" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="6" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="4" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" />
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="10" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="9" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="8" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="7" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="6" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="0"/>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="0"/>
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="1" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="2" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="3" />
