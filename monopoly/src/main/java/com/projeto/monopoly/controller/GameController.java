@@ -16,8 +16,7 @@ import java.io.IOException;
 import java.util.*;
 
 public class GameController extends BaseController {
-    @FXML
-    private GridPane grid;
+
 
     @FXML
     private ImageView person1;
@@ -33,7 +32,7 @@ public class GameController extends BaseController {
     * @throws FileNotFoundException Caso a imagem não seja encontrada
     */
     @FXML
-    public int rollDices() throws FileNotFoundException {
+    public void rollDices() throws FileNotFoundException, InterruptedException {
         dicesAnchor.getChildren().clear();
 
         int firstDiceValue = GameService.generateDiceNumber();
@@ -45,7 +44,8 @@ public class GameController extends BaseController {
         GameService.plotDices(firstDiceImage, secondDiceImage, dicesAnchor);
 
         int totalDiceValue = firstDiceValue + secondDiceValue;
-        return totalDiceValue;
+        GameService.moveCard(person1, totalDiceValue);
+
     }
 
     /**
@@ -64,31 +64,5 @@ public class GameController extends BaseController {
         Image cardImage = GameService.getCardImage(columnIndex, rowIndex);
         GameService.plotCard(cardImage, cardsAnchor);
     }
-    /**
-     * Método utilizado para implementar a lógica de movimentação do jogador
-     */
-    @FXML
-    protected void onMove() {
-        int indexColumn = GridPane.getColumnIndex(this.person1);
-        int indexRow = GridPane.getRowIndex(this.person1);
 
-
-        if(indexRow == 10 && indexColumn > 0){
-            indexColumn--;
-            this.grid = new GridPane();
-            GridPane.setColumnIndex(this.person1, indexColumn);
-        } else if(indexColumn == 0 && indexRow >= 1) {
-            indexRow--;
-            this.grid = new GridPane();
-            GridPane.setRowIndex(this.person1, indexRow);
-        } else if(indexRow == 0 && indexColumn < 10) {
-            indexColumn++;
-            this.grid = new GridPane();
-            GridPane.setColumnIndex(this.person1, indexColumn);
-        } else if(indexColumn == 10 && indexRow >= 0){
-            indexRow++;
-            this.grid = new GridPane();
-            GridPane.setRowIndex(this.person1, indexRow);
-        }
-    }
 }

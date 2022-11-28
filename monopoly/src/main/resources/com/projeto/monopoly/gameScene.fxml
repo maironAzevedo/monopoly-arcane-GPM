@@ -42,7 +42,7 @@
       <AnchorPane layoutX="1005.0" layoutY="-1.0" prefHeight="720.0" prefWidth="277.0">
          <children>
             <AnchorPane fx:id="dicesAnchor" />
-            <Button onMouseClicked="#onMove" layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
+            <Button layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>

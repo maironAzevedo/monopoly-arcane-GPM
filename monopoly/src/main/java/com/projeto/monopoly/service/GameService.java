@@ -1,8 +1,10 @@
 package com.projeto.monopoly.service;
 
+
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.GridPane;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -114,5 +116,38 @@ public class GameService {
         cardImageView.setFitHeight(290);
 
         cardsAnchor.getChildren().add(cardImageView);
+    }
+
+    /**
+     * Método utilizado para implementar a lógica de movimentação do jogador
+     * @param img O personagem que vai ser movimentado.
+     * @param resultDice o valor inteiro da soma dos 2 dados.
+     */
+    public static void moveCard(ImageView img, int resultDice) throws InterruptedException {
+        int indexColumn = GridPane.getColumnIndex(img);
+        int indexRow = GridPane.getRowIndex(img);
+
+
+
+
+
+        for (int i = 0; i < resultDice; i++) {
+            if(indexRow == 10 && indexColumn > 0){
+                indexColumn--;
+                GridPane.setColumnIndex(img, indexColumn);
+            } else {
+                if(indexColumn == 0 && indexRow >= 1) {
+                    indexRow--;
+                    GridPane.setRowIndex(img, indexRow);
+                } else if(indexRow == 0 && indexColumn < 10) {
+                    indexColumn++;
+                    GridPane.setColumnIndex(img, indexColumn);
+                } else if(indexColumn == 10 && indexRow >= 0){
+                    indexRow++;
+                    GridPane.setRowIndex(img, indexRow);
+                }
+            }
+        }
+
     }
 }
