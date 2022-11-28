@@ -3,9 +3,14 @@ package com.projeto.monopoly.service;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Random;
 
 public class GameService {
@@ -84,30 +89,16 @@ public class GameService {
      * @return Imagem da carta correspondente
      * @throws FileNotFoundException Caso o arquivo não exista
      */
-    public static Image getCardImage(int columnIndex, int rowIndex) throws FileNotFoundException {
-        /*
+    public static Image getCardImage(int columnIndex, int rowIndex) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
         JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("cardsMapping.json"));
-        String cardPosition = "ccolumn_" + columnIndex + " row_" + rowIndex;
-        JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);
-        string ImagePath = (String) cardJson.get("image-path");
-        */
 
-        FileInputStream cardImage;
-        String baseUrl = "src/main/resources/com/projeto/monopoly/assets/cards/";
-        if((columnIndex == 2 && rowIndex == 0) ||
-                (columnIndex == 3 && rowIndex == 10) ||
-                (columnIndex == 10 && rowIndex == 6)) {
-            cardImage = new FileInputStream(baseUrl + "sorte.png");
-            return new Image(cardImage);
-        } else if (columnIndex == 9 && rowIndex == 10) {
-            cardImage = new FileInputStream(baseUrl + "beco-perigoso.png");
-            return new Image(cardImage);
-        } else if (columnIndex == 4 && rowIndex == 10) {
-            cardImage = new FileInputStream(baseUrl + "bar-do-vander.png");
-            return new Image(cardImage);
-        }
-        return null;
+        String cardPosition = "column_" + columnIndex + " row_" + rowIndex;
+        JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);
+        String ImagePath = (String) cardJson.get("image-path");
+
+        FileInputStream cardImage = new FileInputStream(ImagePath);
+        return new Image(cardImage);
     }
 
     /**

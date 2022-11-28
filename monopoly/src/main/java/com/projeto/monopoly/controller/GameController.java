@@ -8,8 +8,10 @@ import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
+import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.*;
 
 public class GameController extends BaseController {
@@ -51,7 +53,7 @@ public class GameController extends BaseController {
      * @throws FileNotFoundException caso a imagem não seja encontrada
      */
     @FXML
-    public void showCard(javafx.scene.input.MouseEvent mouseEvent) throws FileNotFoundException {
+    public void showCard(javafx.scene.input.MouseEvent mouseEvent) throws IOException, ParseException {
         cardsAnchor.getChildren().clear();
 
         Node clickedNode = mouseEvent.getPickResult().getIntersectedNode();
