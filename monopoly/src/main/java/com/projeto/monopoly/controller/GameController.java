@@ -5,6 +5,7 @@ import com.projeto.monopoly.service.GameService;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Pane;
@@ -19,7 +20,7 @@ public class GameController extends BaseController {
     private GridPane grid;
 
     @FXML
-    private Pane person1;
+    private ImageView person1;
 
     @FXML
     private AnchorPane cardsAnchor;
@@ -56,7 +57,7 @@ public class GameController extends BaseController {
     public void showCard(javafx.scene.input.MouseEvent mouseEvent) throws IOException, ParseException {
         cardsAnchor.getChildren().clear();
 
-        Node clickedNode = mouseEvent.getPickResult().getIntersectedNode();
+        Node clickedNode = mouseEvent.getPickResult().getIntersectedNode().getParent();
         int columnIndex = GridPane.getColumnIndex(clickedNode);
         int rowIndex = GridPane.getRowIndex(clickedNode);
 

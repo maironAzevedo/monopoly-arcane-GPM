@@ -42,7 +42,7 @@
       <AnchorPane layoutX="1005.0" layoutY="-1.0" prefHeight="720.0" prefWidth="277.0">
          <children>
             <AnchorPane fx:id="dicesAnchor" />
-            <Button layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
+            <Button onMouseClicked="#onMove" layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -87,29 +87,27 @@
             <RowConstraints minHeight="49.0" prefHeight="30.0" vgrow="SOMETIMES" />
          </rowConstraints>
          <children>
-            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="10">
-               <children>
-                  <ImageView fitHeight="32.0" layoutX="13.0" layoutY="7.0" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/tabuleiro/pino-azul.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" layoutX="43.0" layoutY="6.0" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/tabuleiro/pino-rosa.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" layoutX="13.0" layoutY="28.0" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/tabuleiro/pino-roxo.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="32.0" layoutX="43.0" layoutY="27.0" preserveRatio="true">
-                     <image>
-                        <Image url="@assets/tabuleiro/pino-verde.png" />
-                     </image>
-                  </ImageView>
-               </children></AnchorPane>
+            <ImageView fitHeight="32.0" translateX="13.0" translateY="-12.0" preserveRatio="true" fx:id="person1" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@assets/tabuleiro/pino-azul.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" translateX="43.0" translateY="-12.0" preserveRatio="true" fx:id="person2" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@assets/tabuleiro/pino-rosa.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" translateX="13.0" translateY="10" preserveRatio="true" fx:id="person3" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@assets/tabuleiro/pino-roxo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" translateX="43.0" translateY="10" preserveRatio="true" fx:id="person4" GridPane.columnIndex="10" GridPane.rowIndex="10">
+               <image>
+                  <Image url="@assets/tabuleiro/pino-verde.png" />
+               </image>
+            </ImageView>
+            <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="10" GridPane.rowIndex="10"/>
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="9" GridPane.rowIndex="10" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="8" GridPane.rowIndex="10" />
             <AnchorPane onMouseClicked="#showCard" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="7" GridPane.rowIndex="10" />
