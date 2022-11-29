@@ -12,13 +12,20 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class GameController extends BaseController {
-    @FXML
-    private GridPane grid;
+
 
     @FXML
     private ImageView person1;
+    @FXML
+    private ImageView person2;
+    @FXML
+    private ImageView person3;
+    @FXML
+    private ImageView person4;
 
     @FXML
     private AnchorPane cardsAnchor;
@@ -30,9 +37,27 @@ public class GameController extends BaseController {
     * @return Inteiro que representa a soma dos valores dos dados
     * @throws FileNotFoundException Caso a imagem não seja encontrada
     */
+    int playerCurrent = 1;
+    int qtdDiceEqual = 0;
     @FXML
-    public int rollDices() throws FileNotFoundException {
+    public void rollDices() throws FileNotFoundException, InterruptedException {
         dicesAnchor.getChildren().clear();
+
+        ImageView[] players = new ImageView[5];
+        players[1] = person1;
+        players[2] = person2;
+        players[3] = person3;
+        players[4] = person4;
+
+        if(qtdDiceEqual == 2) {
+            qtdDiceEqual = 0;
+
+            if(playerCurrent == 4) {
+                playerCurrent = 1;
+            } else {
+                playerCurrent++;
+            }
+        }
 
         int firstDiceValue = GameService.generateDiceNumber();
         Image firstDiceImage = GameService.getDiceImage(firstDiceValue);
@@ -43,7 +68,21 @@ public class GameController extends BaseController {
         GameService.plotDices(firstDiceImage, secondDiceImage, dicesAnchor);
 
         int totalDiceValue = firstDiceValue + secondDiceValue;
-        return totalDiceValue;
+
+        GameService.moveCard(players[playerCurrent], totalDiceValue);
+
+        if(firstDiceValue == secondDiceValue){
+            qtdDiceEqual++;
+            return;
+        }
+
+        playerCurrent++;
+        qtdDiceEqual = 0;
+
+        if(playerCurrent == 5) {
+            playerCurrent = 1;
+        }
+
     }
 
     /**
@@ -62,31 +101,5 @@ public class GameController extends BaseController {
         Image cardImage = GameService.getCardImage(columnIndex, rowIndex);
         GameService.plotCard(cardImage, cardsAnchor);
     }
-    /**
-     * Método utilizado para implementar a lógica de movimentação do jogador
-     */
-    @FXML
-    protected void onMove() {
-        int indexColumn = GridPane.getColumnIndex(this.person1);
-        int indexRow = GridPane.getRowIndex(this.person1);
 
-
-        if(indexRow == 10 && indexColumn > 0){
-            indexColumn--;
-            this.grid = new GridPane();
-            GridPane.setColumnIndex(this.person1, indexColumn);
-        } else if(indexColumn == 0 && indexRow >= 1) {
-            indexRow--;
-            this.grid = new GridPane();
-            GridPane.setRowIndex(this.person1, indexRow);
-        } else if(indexRow == 0 && indexColumn < 10) {
-            indexColumn++;
-            this.grid = new GridPane();
-            GridPane.setColumnIndex(this.person1, indexColumn);
-        } else if(indexColumn == 10 && indexRow >= 0){
-            indexRow++;
-            this.grid = new GridPane();
-            GridPane.setRowIndex(this.person1, indexRow);
-        }
-    }
 }
