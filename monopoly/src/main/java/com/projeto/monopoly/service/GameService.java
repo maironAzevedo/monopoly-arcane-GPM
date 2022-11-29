@@ -113,7 +113,7 @@ public class GameService {
         cardImageView.setX(31);
         cardImageView.setY(217);
         cardImageView.setPreserveRatio(true);
-        cardImageView.setFitHeight(290);
+        cardImageView.setFitWidth(210);
 
         cardsAnchor.getChildren().add(cardImageView);
     }

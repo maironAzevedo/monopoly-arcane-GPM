@@ -8,7 +8,6 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
@@ -95,7 +94,7 @@ public class GameController extends BaseController {
     public void showCard(javafx.scene.input.MouseEvent mouseEvent) throws IOException, ParseException {
         cardsAnchor.getChildren().clear();
 
-        Node clickedNode = mouseEvent.getPickResult().getIntersectedNode().getParent();
+        Node clickedNode = (Node) mouseEvent.getSource();
         int columnIndex = GridPane.getColumnIndex(clickedNode);
         int rowIndex = GridPane.getRowIndex(clickedNode);
 
