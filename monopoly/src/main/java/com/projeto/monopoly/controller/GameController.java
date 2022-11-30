@@ -50,8 +50,10 @@ public class GameController extends BaseController {
     int playerCurrent = 1;
     int qtdDiceEqual = 0;
     @FXML
-    public void rollDices() throws FileNotFoundException, InterruptedException {
+    public void rollDices(MouseEvent event) throws IOException, InterruptedException, ParseException {
         dicesAnchor.getChildren().clear();
+        Node clickedNode = (Node) event.getSource();
+        Stage primaryStage = (Stage) clickedNode.getScene().getWindow();
 
         ImageView[] players = new ImageView[5];
         players[1] = person1;
@@ -80,6 +82,14 @@ public class GameController extends BaseController {
         int totalDiceValue = firstDiceValue + secondDiceValue;
 
         GameService.moveCard(players[playerCurrent], totalDiceValue);
+
+        int playerColumnIndex = GridPane.getColumnIndex(players[playerCurrent]);
+        int playerRowIndex = GridPane.getRowIndex(players[playerCurrent]);
+
+        Long cardValue = GameService.getCardValue(playerColumnIndex,playerRowIndex);
+        String cardName = GameService.getCardName(playerColumnIndex, playerRowIndex);
+        Image cardImage = GameService.getCardImage(playerColumnIndex, playerRowIndex);
+        GameService.generateCardPopup(cardImage, primaryStage, String.valueOf(cardValue), cardName);
 
         if(firstDiceValue == secondDiceValue){
             qtdDiceEqual++;
