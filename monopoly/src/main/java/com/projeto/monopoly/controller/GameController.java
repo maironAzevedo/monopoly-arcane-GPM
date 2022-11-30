@@ -1,23 +1,34 @@
 package com.projeto.monopoly.controller;
 
+import com.projeto.monopoly.MonopolyApplication;
 import com.projeto.monopoly.core.BaseController;
+import com.projeto.monopoly.service.AppMenuService;
 import com.projeto.monopoly.service.GameService;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
 import javafx.scene.Node;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+import javafx.stage.Popup;
 import org.json.simple.parser.ParseException;
 
+import javax.swing.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 
 public class GameController extends BaseController {
-
-
     @FXML
     private ImageView person1;
     @FXML
@@ -26,10 +37,9 @@ public class GameController extends BaseController {
     private ImageView person3;
     @FXML
     private ImageView person4;
-
     @FXML
     private AnchorPane cardsAnchor;
-
+    @FXML AnchorPane pauseAnchor;
     @FXML
     private AnchorPane dicesAnchor;
 
@@ -83,6 +93,35 @@ public class GameController extends BaseController {
             playerCurrent = 1;
         }
 
+    }
+
+    /**
+     * Método responsável por realizar o pause do jogo
+     * @param event Clique do mouse
+     * @throws IOException
+     */
+    @FXML
+    public void pauseGame(MouseEvent event) throws IOException {
+        Node clickedNode = (Node) event.getSource();
+        Stage primaryStage = (Stage) clickedNode.getScene().getWindow();
+        FXMLLoader pauseLoader = new FXMLLoader(MonopolyApplication.class.getResource("pauseScene.fxml"));
+        Scene pauseScene = new Scene(pauseLoader.load());
+        Node pauseSceneRoot = pauseScene.getRoot();
+
+        Button pauseButton = new Button();
+        pauseButton.setTranslateY(470);
+        pauseButton.setTranslateX(570);
+        pauseButton.setCursor(Cursor.cursor("HAND"));
+        pauseButton.setStyle("-fx-background-color: #ffa500; -fx-font-family: Arial; -fx-font-size: 18px; -fx-font-weight: Bold; -fx-padding: 10px, 20px; -fx-text-fill: #FFF");
+        pauseButton.setText("Voltar ao jogo");
+
+        Popup popup = new Popup();
+        popup.getContent().add(pauseSceneRoot);
+        popup.getContent().add(pauseButton);
+        popup.show(primaryStage);
+
+        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> popup.hide();
+        pauseButton.setOnAction(pauseClickEvent);
     }
 
     /**
