@@ -127,10 +127,6 @@ public class GameService {
         int indexColumn = GridPane.getColumnIndex(img);
         int indexRow = GridPane.getRowIndex(img);
 
-
-
-
-
         for (int i = 0; i < resultDice; i++) {
             if(indexRow == 10 && indexColumn > 0){
                 indexColumn--;
