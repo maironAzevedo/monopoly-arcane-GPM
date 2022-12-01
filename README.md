@@ -1,6 +1,10 @@
 # monopoly-arcane-GPM
 Repositório criado no intuito de armazenar a aplicação desenvolvida para a disciplina "Gerência de projetos e manutenção" ministrada pelo professor Troy Costa Kohwalter em 2022.2
 
+##REQUISITOS MÍNIMOS
+- InteliJ Community Version.
+- Java 17.0.2.
+- Maven latest version.
 
 ## Como gerar o build do projeto
 - Primeiro clica em File
