@@ -43,7 +43,11 @@ public class LobbyController extends BaseController {
         Stage stage = (Stage) clickedNode.getScene().getWindow();
 
         FXMLLoader gameLoader = new FXMLLoader(MonopolyApplication.class.getResource("gameScene.fxml"));
+        //gameLoader.setController(new GameController("jadinho"));
+
         Scene gameScene = new Scene(gameLoader.load());
         changeScene(gameScene, stage);
+        //stage.setScene(gameScene);
+        //stage.show();
     }
 }

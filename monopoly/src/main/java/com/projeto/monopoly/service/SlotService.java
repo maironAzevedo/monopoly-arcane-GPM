@@ -14,7 +14,7 @@ public class SlotService {
 
     public SlotService(int indexColumn, int indexRow) throws IOException, ParseException {
         JSONParser parser = new JSONParser();
-        JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("slots.json"));
+        JSONObject jsonObject = (JSONObject) parser.parse(new FileReader("cardsMapping.json"));
         String cardPosition = "column_"+ indexColumn + " row_" + indexRow;
         JSONObject cardJson = (JSONObject) jsonObject.get(cardPosition);
         String title = (String) cardJson.get("title");

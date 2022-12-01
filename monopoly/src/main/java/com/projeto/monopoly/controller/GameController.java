@@ -1,6 +1,7 @@
 package com.projeto.monopoly.controller;
 
 import com.projeto.monopoly.core.BaseController;
+import com.projeto.monopoly.model.PersonModel;
 import com.projeto.monopoly.service.GameService;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -8,17 +9,12 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.Pane;
 import org.json.simple.parser.ParseException;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Array;
-import java.util.*;
 
 public class GameController extends BaseController {
-
-
     @FXML
     private ImageView person1;
     @FXML
@@ -40,20 +36,26 @@ public class GameController extends BaseController {
     */
     int playerCurrent = 1;
     int qtdDiceEqual = 0;
+
+    private PersonModel[] listaDeJogadores;
+
+    /*public GameController(String teste) {
+        System.out.println(teste);
+        this.listaDeJogadores = new PersonModel[3];
+        this.listaDeJogadores[1] = new PersonModel("Jadinho", person1);
+        this.listaDeJogadores[2] = new PersonModel("Deno", person2);
+    }*/
+
     @FXML
     public void rollDices() throws FileNotFoundException, InterruptedException {
         dicesAnchor.getChildren().clear();
-
-        ImageView[] players = new ImageView[5];
-        players[1] = person1;
-        players[2] = person2;
-        players[3] = person3;
-        players[4] = person4;
-
+        this.listaDeJogadores = new PersonModel[3];
+        this.listaDeJogadores[1] = new PersonModel("Jadinho", person1);
+        this.listaDeJogadores[2] = new PersonModel("Deno", person2);
         if(qtdDiceEqual == 2) {
             qtdDiceEqual = 0;
 
-            if(playerCurrent == 4) {
+            if(playerCurrent == listaDeJogadores.length - 1) {
                 playerCurrent = 1;
             } else {
                 playerCurrent++;
@@ -70,7 +72,7 @@ public class GameController extends BaseController {
 
         int totalDiceValue = firstDiceValue + secondDiceValue;
 
-        GameService.moveCard(players[playerCurrent], totalDiceValue);
+        GameService.moveCard(listaDeJogadores[playerCurrent].getPlayer(), totalDiceValue);
 
         if(firstDiceValue == secondDiceValue){
             qtdDiceEqual++;
@@ -80,7 +82,7 @@ public class GameController extends BaseController {
         playerCurrent++;
         qtdDiceEqual = 0;
 
-        if(playerCurrent == 5) {
+        if(playerCurrent == listaDeJogadores.length) {
             playerCurrent = 1;
         }
 
