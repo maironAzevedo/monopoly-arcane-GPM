@@ -43,7 +43,7 @@
       <AnchorPane layoutX="1005.0" layoutY="-1.0" prefHeight="720.0" prefWidth="277.0">
          <children>
             <AnchorPane fx:id="dicesAnchor" />
-            <Button layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
+            <Button fx:id="mycardsButton" layoutX="61.0" layoutY="657.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #ffa500;" text="Minhas Cartas" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
@@ -59,7 +59,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button layoutX="61.0" layoutY="595.0" mnemonicParsing="false" onMouseClicked="#rollDices" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
+            <Button fx:id="rollDicesButton" layoutX="61.0" layoutY="595.0" mnemonicParsing="false" onMouseClicked="#rollDices" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #14d836;" text="Rolar Dados" textFill="WHITE">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>

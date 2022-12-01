@@ -4,6 +4,7 @@ package com.projeto.monopoly.service;
 import com.projeto.monopoly.MonopolyApplication;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Cursor;
 import javafx.scene.Node;
@@ -29,6 +30,7 @@ import java.util.Random;
 public class GameService {
 
     public static void generateCardPopup(Image cardImage, Stage stage, String cardValue, String cardName) throws IOException {
+
         FXMLLoader warningLoader = new FXMLLoader(MonopolyApplication.class.getResource("popupWarning.fxml"));
         Scene warningScene = new Scene(warningLoader.load());
         Node warningSceneRoot = warningScene.getRoot();
@@ -70,8 +72,11 @@ public class GameService {
         popup.getContent().add(closeButton);
         popup.show(stage);
 
-        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> popup.hide();
+        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> {
+
+            popup.hide();};
         closeButton.setOnAction(pauseClickEvent);
+
     }
 
     /**
