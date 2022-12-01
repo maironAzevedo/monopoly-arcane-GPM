@@ -18,6 +18,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.Popup;
@@ -96,7 +97,8 @@ public class GameController extends BaseController {
         Long cardValue = GameService.getCardValue(playerColumnIndex,playerRowIndex);
         String cardName = GameService.getCardName(playerColumnIndex, playerRowIndex);
         Image cardImage = GameService.getCardImage(playerColumnIndex, playerRowIndex);
-        GameService.generateCardPopup(cardImage, primaryStage, String.valueOf(cardValue), cardName);
+        generateCardPopup(cardImage, primaryStage, String.valueOf(cardValue), cardName);
+
 
         if(firstDiceValue == secondDiceValue){
             qtdDiceEqual++;
@@ -165,6 +167,56 @@ public class GameController extends BaseController {
 
         Image cardImage = GameService.getCardImage(columnIndex, rowIndex);
         GameService.plotCard(cardImage, cardsAnchor);
+    }
+    @FXML
+    public void generateCardPopup(Image cardImage, Stage stage, String cardValue, String cardName) throws IOException {
+        rollDicesButton.setDisable(true);
+        FXMLLoader warningLoader = new FXMLLoader(MonopolyApplication.class.getResource("popupWarning.fxml"));
+        Scene warningScene = new Scene(warningLoader.load());
+        Node warningSceneRoot = warningScene.getRoot();
+
+        ImageView cardImageView = new ImageView(cardImage);
+        cardImageView.setPreserveRatio(true);
+        cardImageView.setX(580);
+        cardImageView.setY(260);
+        cardImageView.setFitWidth(150);
+
+        String warningString = "Terreno: " + cardName + "\nValor: $" + cardValue;
+        Text warningText = new Text(warningString);
+        warningText.setStyle("-fx-font-family: Arial; -fx-font-size: 18px; -fx-font-weight: Bold; -fx-fill: #FFF");
+        warningText.setX(540);
+        warningText.setY(210);
+
+        Button closeButton = new Button();
+        closeButton.setTranslateY(500);
+        closeButton.setCursor(Cursor.cursor("HAND"));
+        closeButton.setStyle("-fx-background-color: #ffa500; -fx-font-family: Arial; -fx-font-size: 18px; -fx-font-weight: Bold; -fx-padding: 10px, 20px; -fx-text-fill: #FFF");
+
+        if (cardName.equals("Cadeia") || cardName.equals("Estacionamento") || cardName.equals("Vá para a cadeia") || cardName.equals("Início")) {
+            closeButton.setText("OK");
+            closeButton.setTranslateX(630);
+
+        } else if (cardName.equals("Sorte") || cardName.equals("Cofre")) {
+            closeButton.setText("Tirar carta");
+            closeButton.setTranslateX(600);
+
+        } else {
+            closeButton.setText("Comprar");
+            closeButton.setTranslateX(610);
+        }
+
+        Popup popup = new Popup();
+        popup.getContent().add(warningSceneRoot);
+        popup.getContent().add(cardImageView);
+        popup.getContent().add(warningText);
+        popup.getContent().add(closeButton);
+        popup.show(stage);
+
+        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> {
+            rollDicesButton.setDisable(false);
+            popup.hide();};
+        closeButton.setOnAction(pauseClickEvent);
+
     }
 
 }

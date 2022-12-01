@@ -29,55 +29,6 @@ import java.util.Random;
 
 public class GameService {
 
-    public static void generateCardPopup(Image cardImage, Stage stage, String cardValue, String cardName) throws IOException {
-
-        FXMLLoader warningLoader = new FXMLLoader(MonopolyApplication.class.getResource("popupWarning.fxml"));
-        Scene warningScene = new Scene(warningLoader.load());
-        Node warningSceneRoot = warningScene.getRoot();
-
-        ImageView cardImageView = new ImageView(cardImage);
-        cardImageView.setPreserveRatio(true);
-        cardImageView.setX(580);
-        cardImageView.setY(260);
-        cardImageView.setFitWidth(150);
-
-        String warningString = "Terreno: " + cardName + "\nValor: $" + cardValue;
-        Text warningText = new Text(warningString);
-        warningText.setStyle("-fx-font-family: Arial; -fx-font-size: 18px; -fx-font-weight: Bold; -fx-fill: #FFF");
-        warningText.setX(540);
-        warningText.setY(210);
-
-        Button closeButton = new Button();
-        closeButton.setTranslateY(500);
-        closeButton.setCursor(Cursor.cursor("HAND"));
-        closeButton.setStyle("-fx-background-color: #ffa500; -fx-font-family: Arial; -fx-font-size: 18px; -fx-font-weight: Bold; -fx-padding: 10px, 20px; -fx-text-fill: #FFF");
-
-        if (cardName.equals("Cadeia") || cardName.equals("Estacionamento") || cardName.equals("Vá para a cadeia") || cardName.equals("Início")) {
-            closeButton.setText("OK");
-            closeButton.setTranslateX(630);
-
-        } else if (cardName.equals("Sorte") || cardName.equals("Cofre")) {
-            closeButton.setText("Tirar carta");
-            closeButton.setTranslateX(600);
-
-        } else {
-            closeButton.setText("Comprar");
-            closeButton.setTranslateX(610);
-        }
-
-        Popup popup = new Popup();
-        popup.getContent().add(warningSceneRoot);
-        popup.getContent().add(cardImageView);
-        popup.getContent().add(warningText);
-        popup.getContent().add(closeButton);
-        popup.show(stage);
-
-        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> {
-
-            popup.hide();};
-        closeButton.setOnAction(pauseClickEvent);
-
-    }
 
     /**
      * Método responsável por gerar um número aleatório de 1 a 6
