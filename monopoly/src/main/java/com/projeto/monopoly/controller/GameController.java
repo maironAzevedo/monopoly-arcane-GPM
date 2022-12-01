@@ -5,6 +5,7 @@ import com.projeto.monopoly.core.BaseController;
 import com.projeto.monopoly.service.AppMenuService;
 import com.projeto.monopoly.service.GameService;
 import javafx.event.ActionEvent;
+import javafx.event.EventDispatcher;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -42,6 +43,12 @@ public class GameController extends BaseController {
     @FXML AnchorPane pauseAnchor;
     @FXML
     private AnchorPane dicesAnchor;
+    @FXML
+    private Button rollDicesButton;
+    @FXML
+    private Button mycardsButton;
+
+
 
     /** Método responsável por realizar a lógica da rolagem de dados no jogo
     * @return Inteiro que representa a soma dos valores dos dados
@@ -112,6 +119,9 @@ public class GameController extends BaseController {
      */
     @FXML
     public void pauseGame(MouseEvent event) throws IOException {
+        rollDicesButton.setDisable(true);
+        mycardsButton.setDisable(true);
+
         Node clickedNode = (Node) event.getSource();
         Stage primaryStage = (Stage) clickedNode.getScene().getWindow();
         FXMLLoader pauseLoader = new FXMLLoader(MonopolyApplication.class.getResource("pauseScene.fxml"));
@@ -130,8 +140,14 @@ public class GameController extends BaseController {
         popup.getContent().add(pauseButton);
         popup.show(primaryStage);
 
-        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> popup.hide();
+
+        EventHandler<ActionEvent> pauseClickEvent = unpauseEvent -> {
+            rollDicesButton.setDisable(false);
+            mycardsButton.setDisable(false);
+            popup.hide();};
         pauseButton.setOnAction(pauseClickEvent);
+
+
     }
 
     /**
@@ -152,3 +168,4 @@ public class GameController extends BaseController {
     }
 
 }
+
